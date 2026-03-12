@@ -14,6 +14,7 @@ export default function Home() {
   const dynamicStats = stats.map((stat) =>
     stat.label === "Years Building Products" ? { ...stat, value: getYearsBuildingProducts() } : stat
   );
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   return (
     <div className="space-y-16 pb-6 sm:space-y-20">
@@ -28,7 +29,7 @@ export default function Home() {
                   <div className="flex justify-center">
                     <div className="overflow-hidden rounded-2xl border border-white/20 bg-white/5 p-1 shadow-glass">
                       <Image
-                        src="/images/chathuranga-costa.jpg"
+                        src={`${basePath}/images/chathuranga-costa.jpg`}
                         alt="Chathuranga Costa profile photo"
                         width={220}
                         height={220}
