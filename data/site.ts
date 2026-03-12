@@ -73,17 +73,17 @@ export const profile: Profile = {
 
 type StackIcon = IconType | LucideIcon;
 
-export const stackIcons: { label: string; icon: StackIcon }[] = [
-  { label: "TypeScript", icon: SiTypescript },
-  { label: "React", icon: SiReact },
-  { label: "Next.js", icon: SiNextdotjs },
-  { label: "NestJS", icon: SiNestjs },
-  { label: "Node.js", icon: SiNodedotjs },
-  { label: "FastAPI", icon: SiFastapi },
-  { label: "Python", icon: SiPython },
-  { label: "Spring", icon: SiSpring },
-  { label: "PostgreSQL", icon: SiPostgresql },
-  { label: "AWS", icon: CloudCog }
+export const stackIcons: { label: string; icon: StackIcon; iconColor: string; glow: string }[] = [
+  { label: "TypeScript", icon: SiTypescript, iconColor: "#2F74C0", glow: "rgba(47, 116, 192, 0.3)" },
+  { label: "React", icon: SiReact, iconColor: "#61DAFB", glow: "rgba(97, 218, 251, 0.3)" },
+  { label: "Next.js", icon: SiNextdotjs, iconColor: "#F8FAFC", glow: "rgba(248, 250, 252, 0.26)" },
+  { label: "NestJS", icon: SiNestjs, iconColor: "#E0234E", glow: "rgba(224, 35, 78, 0.28)" },
+  { label: "Node.js", icon: SiNodedotjs, iconColor: "#8CC84B", glow: "rgba(140, 200, 75, 0.28)" },
+  { label: "FastAPI", icon: SiFastapi, iconColor: "#00C7B7", glow: "rgba(0, 199, 183, 0.26)" },
+  { label: "Python", icon: SiPython, iconColor: "#FFD447", glow: "rgba(255, 212, 71, 0.27)" },
+  { label: "Spring", icon: SiSpring, iconColor: "#6DB33F", glow: "rgba(109, 179, 63, 0.26)" },
+  { label: "PostgreSQL", icon: SiPostgresql, iconColor: "#3F7EBA", glow: "rgba(63, 126, 186, 0.28)" },
+  { label: "AWS", icon: CloudCog, iconColor: "#FF9900", glow: "rgba(255, 153, 0, 0.28)" }
 ];
 
 export const stats = [
@@ -92,6 +92,14 @@ export const stats = [
   { label: "Core Focus", value: "APIs, Cloud, AI Integration" },
   { label: "Leadership", value: "Cross-functional Team Mentorship" }
 ];
+
+export const EXPERIENCE_START_YEAR = 2021;
+
+export function getYearsBuildingProducts(now = new Date()): string {
+  const year = now.getFullYear();
+  const years = Math.max(1, year - EXPERIENCE_START_YEAR);
+  return `${years}+`;
+}
 
 export const experience: ExperienceItem[] = [
   {

@@ -20,7 +20,12 @@ export default function ProjectsPage() {
         <SectionHeading
           eyebrow="Case Studies"
           title="Flagship engineering projects"
-          description="Detailed architecture and delivery narratives for the projects most relevant to senior full-stack + AI hiring decisions."
+          description={
+            <span className="!text-white">
+              Detailed architecture and delivery narratives for the projects most relevant to senior full-stack + AI hiring decisions.
+            </span>
+          }
+          descriptionClassName="max-w-6xl !text-white"
         />
         <div className="grid gap-4 md:grid-cols-2">
           {deepDives.map((project, index) => (

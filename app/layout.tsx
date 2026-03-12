@@ -22,10 +22,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className="font-[var(--font-body)]">
         <Nav />
-        <main className="mx-auto w-full max-w-6xl px-4 pt-10 sm:px-6 lg:px-8">{children}</main>
+        <main className="mx-auto w-full max-w-7xl px-4 pt-10 sm:px-6 lg:px-8">{children}</main>
         <Footer />
       </body>
     </html>

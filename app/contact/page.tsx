@@ -17,7 +17,12 @@ export default function ContactPage() {
       <SectionHeading
         eyebrow="Contact"
         title="Start a hiring conversation"
-        description="For senior full-stack or AI-integrated platform roles, use the primary call booking flow or direct professional channels below."
+        description={
+          <span className="!text-white">
+            For senior full-stack or AI-integrated platform roles, use the primary call booking flow or direct professional channels below.
+          </span>
+        }
+        descriptionClassName="max-w-6xl !text-white"
       />
 
       <Reveal>

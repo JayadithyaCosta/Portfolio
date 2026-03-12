@@ -15,7 +15,7 @@ const config: Config = {
         accent: "#42D9FF",
         accent2: "#7B7CFF",
         text: "#E2E8F0",
-        muted: "#94A3B8"
+        muted: "#B9C7DD"
       },
       boxShadow: {
         glow: "0 0 35px rgba(66, 217, 255, 0.32)",

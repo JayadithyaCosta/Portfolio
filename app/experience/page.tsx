@@ -16,7 +16,12 @@ export default function ExperiencePage() {
       <SectionHeading
         eyebrow="Experience"
         title="Career progression from full-stack delivery to technical leadership"
-        description="Production ownership across backend architecture, cloud deployment, CI/CD quality, and AI feature delivery."
+        description={
+          <span className="!text-white">
+            Production ownership across backend architecture, cloud deployment, CI/CD quality, and AI feature delivery.
+          </span>
+        }
+        descriptionClassName="max-w-6xl !text-white"
       />
 
       <div className="space-y-4">

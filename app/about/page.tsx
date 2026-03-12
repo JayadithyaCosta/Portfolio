@@ -16,7 +16,8 @@ export default function AboutPage() {
       <SectionHeading
         eyebrow="About"
         title="Engineer profile and professional direction"
-        description={profile.summary}
+        description={<span className="!text-white">{profile.summary}</span>}
+        descriptionClassName="max-w-6xl !text-white"
       />
 
       <Reveal>

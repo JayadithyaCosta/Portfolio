@@ -16,7 +16,12 @@ export default function SkillsPage() {
       <SectionHeading
         eyebrow="Capabilities"
         title="Technical depth across full-stack and AI-enabled product delivery"
-        description="Skills grouped by execution domain to show where I can contribute immediately in senior engineering roles."
+        description={
+          <span className="!text-white">
+            Skills grouped by execution domain to show where I can contribute immediately in senior engineering roles.
+          </span>
+        }
+        descriptionClassName="max-w-6xl !text-white"
       />
 
       <div className="grid gap-4 md:grid-cols-2">
